@@ -291,5 +291,13 @@ AOS.init({
       }
     }
   })
-  
+  $('.read_more').click(function () {
+    $('.moretext').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+
 })(jQuery);
