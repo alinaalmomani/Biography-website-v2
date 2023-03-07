@@ -1,3 +1,11 @@
+<?php
+include 'action/config.php';
+
+$sql = "SELECT * FROM messages WHERE 	approved='1' ORDER BY RAND ( )  
+LIMIT 64  ";
+$result = mysqli_query($con, $sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -173,7 +181,7 @@
           </div>
         </div>
         <div class=" co container-right">
-          <div class="date">nineteen</div>
+          <div class="date">2019</div>
           <div class="card w-100">
             <div class="card-body ">
               <h5 class="card-title">Special title treatment</h5>
@@ -1103,11 +1111,12 @@
       </div>
       <div class="row no-gutters block-9">
         <div class="col-md-6 d-flex ">
-          <div class="img " onclick="document.getElementById('file-input').click()"
+          <div class="img" onclick="document.getElementById('file-input').click()"
             style="background-image: url(images/default.png);"></div>
         </div>
         <div class="col-md-6  d-flex">
-          <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form">
+          <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form"
+            enctype="multipart/form-data">
             <div class="form-group">
               <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
             </div>
@@ -1118,7 +1127,7 @@
               <textarea name="Message" id="" cols="30" rows="7" class="form-control" placeholder="Message"
                 maxlength="200" required></textarea>
             </div>
-            <input type="file" name='file' id="file-input" style="display: none;" class="form-control "
+            <input type="file" name=' file' id="file-input" style="display: none;" class="form-control "
               id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
             <div class="form-group">
               <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -1132,654 +1141,37 @@
   <section class="ftco-section">
     <div class="container ">
       <div class="container messages-rows">
-      <div class="row mb-5 ">
-        <div class="item col-md-3 mr-1">
+        <?php
+        $count = 0;
+        while ($row = mysqli_fetch_assoc($result)) {
+          if ($count % 4 == 0) {
+            echo '<div class="row mb-5">';
+          }
+          $image = "uploads/" . $row["image"];
+          // Display result data here
+          echo '<div class="item col-lg-3 col-md-6 mr-1 mb-2">
           <div class="card shadow">
             <div class="card-body">
               <div class="d-flex align-items-center">
                 <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
+                  <img src="' . $image . '" >
                 </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
+                <h5 class="card-title mb-0 ms-3">' . $row['full_name'] . '</h5>
               </div>
-              <p class="mt-3">This is the message underneath the card.</p>
+              <p class="mt-3">' . $row['message'] . '</p>
             </div>
           </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-md-3 mr-1">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="https://via.placeholder.com/70" alt="Circle Image">
-                </div>
-                <h5 class="card-title mb-0 ms-3">Card Title</h5>
-              </div>
-              <p class="mt-3">This is the message underneath the card.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </div>';
+
+          // End the row after every 4 results
+          if (($count + 1) % 4 == 0) {
+            echo '</div>';
+          }
+
+          // Increment count
+          $count++;
+        } ?>
+
       </div>
       <div class="container text-center">
         <button class="btn btn-primary" id="load-more-btn"> Load More</button>
@@ -1794,8 +1186,10 @@
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
             there live the blind texts.</p>
           <ul class="ftco-footer-social list-unstyled mt-5">
-            <li class="ftco-animate"><a href="https://twitter.com/thierrymarigny?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="ftco-animate"><a href="https://jo.linkedin.com/in/thierry-marigny-43981a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="ftco-animate"><a href="https://twitter.com/thierrymarigny?lang=en" target="_blank"><i
+                  class="fa-brands fa-twitter"></i></a></li>
+            <li class="ftco-animate"><a href="https://jo.linkedin.com/in/thierry-marigny-43981a" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
           </ul>
         </div>
       </div>
@@ -1823,14 +1217,14 @@
   <script src="js/main.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
-    gtag('config', 'UA-23581568-13');
+  gtag('config', 'UA-23581568-13');
   </script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
     integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="

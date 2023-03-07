@@ -309,6 +309,10 @@ AOS.init({
   }
   let loadMoreBtn = document.querySelector('#load-more-btn');
   let currentItem = 2;
+  let array = [...document.querySelectorAll('.messages-rows .row')];
+  if (array.length <= 2) {
+    loadMoreBtn.style.display = "none"
+  }
 
   loadMoreBtn.onclick = () => {
     let boxes = [...document.querySelectorAll('.messages-rows .row')];

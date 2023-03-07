@@ -4138,8 +4138,12 @@ textarea.form-control {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
   }
+    
 }
-
+.messages-rows .card{
+  height: 20em !important;
+  
+}
 .carousel-wrap {
   margin: 90px auto;
   padding: 0 5%;

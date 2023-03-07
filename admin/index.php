@@ -5,7 +5,7 @@ if ($_SESSION['admin'] != true) {
   header('Location: login.php');
   exit();
 }
-$sql = "SELECT * FROM messages WHERE appeoved	= false";
+$sql = "SELECT * FROM messages WHERE approved	= false";
 $result = mysqli_query($con, $sql);
 $sql2 = "SELECT * FROM admin WHERE admin_id	= 1";
 $result2 = mysqli_query($con, $sql2);
@@ -20,9 +20,7 @@ $name = $row['admin_name'];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords"
-    content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
-  <!-- Css -->
+  <link rel="icon" type="icon/x-icon" href="../icon/orange-logo.svg">
   <link rel="stylesheet" href="./dist/styles.css">
   <link rel="stylesheet" href="./dist/all.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
@@ -31,7 +29,7 @@ $name = $row['admin_name'];
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Dashboard | Tailwind Admin</title>
+  <title>Dashboard</title>
 </head>
 
 <body>
@@ -92,8 +90,10 @@ $name = $row['admin_name'];
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
+                        <th scope="col">Image</th>
                         <th scope="col">Email</th>
                         <th scope="col">Message</th>
+                        <th scope="col">Date</th>
                         <th scope="col">Delete</th>
                         <th scope="col">Approve</th>
                       </tr>
@@ -109,8 +109,12 @@ $name = $row['admin_name'];
                         <td>
                           ' . $row['full_name'] . '
                         </td>
+                        <td>
+                          <img src"../uploads/' . $row['image'] . '" class="rounded_circle">
+                        </td>
                         <td>' . $row['company_email'] . '</td>
                         <td>' . $row['message'] . '</td>
+                        <td>' . $row['date'] . '</td>
                         <td>
                           <a href="delete.php?id=' . $id . '" class="text-danger"><i class="fa-regular fa-trash-can"></i></a>
                         </td>
@@ -131,14 +135,6 @@ $name = $row['admin_name'];
         </main>
         <!--/Main-->
       </div>
-      <!--Footer-->
-      <footer class="bg-grey-darkest text-white p-2">
-        <div class="flex flex-1 mx-auto">&copy; My Design</div>
-        <div class="flex flex-1 mx-auto">Distributed by: <a href="https://themewagon.com/"
-            target=" _blank">Themewagon</a>
-        </div>
-      </footer>
-      <!--/footer-->
 
     </div>
 

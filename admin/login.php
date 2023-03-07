@@ -16,9 +16,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $_SESSION['admin'] = true;
     header('Location: index.php');
   }
-  else{
-    echo"kkk";
-  }
 } ?>
 <!doctype html>
 <html lang="en">
@@ -27,6 +24,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
   <title>Login | Tailwind Admin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="icon/x-icon" href="../icon/orange-logo.svg">
   <link rel="stylesheet" href="./dist/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -50,7 +48,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
               required placeholder="*******">
           </div>
           <div class="mt-4 items-center justify-between">
-            <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+            <button class="px-4 py-1 text-white font-light tracking-wider bg-orange rounded"
               type="submit">Login</button>
 
           </div>

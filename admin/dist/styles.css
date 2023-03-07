@@ -55,7 +55,9 @@ hr {
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
-
+.bg-gray-200{
+  background-color: #fff5eb  !important;
+}
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -1293,9 +1295,7 @@ th {
   background-color: #f7fafc;
 }
 
-.bg-gray-200 {
-  background-color: #edf2f7;
-}
+
 
 .bg-gray-300 {
   background-color: #e2e8f0;
