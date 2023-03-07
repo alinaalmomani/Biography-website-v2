@@ -299,5 +299,29 @@ AOS.init({
       this.innerText = "Read More";
     }
   });
+  $('.year__controls li').on('click', function () {
+    $('.year__controls li').removeClass('active');
+    $(this).addClass('active');
+  });
+  if ($('.year__filter').length > 0) {
+    var containerEl = document.querySelector('.year__filter');
+    var mixer = mixitup(containerEl);
+  }
+  let loadMoreBtn = document.querySelector('#load-more-btn');
+  let currentItem = 2;
 
+  loadMoreBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.messages-rows .row')];
+
+    for (var i = currentItem; i < currentItem + 2; i++) {
+      boxes[i].style.display = "flex";
+    }
+
+    currentItem += 2;
+
+    if (currentItem >= boxes.length) {
+      loadMoreBtn.style.display = "inline-Block"
+    }
+
+  }
 })(jQuery);
