@@ -291,8 +291,48 @@ AOS.init({
       }
     }
   })
-  $('.read_more').click(function () {
-    $('.moretext').slideToggle();
+  $('.read_more_2018').click(function () {
+    $('.moretext-2018').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+  $('.read_more_2019').click(function () {
+    $('.moretext-2019').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+  $('.read_more_2020').click(function () {
+    $('.moretext-2020').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+  $('.read_more_2021').click(function () {
+    $('.moretext-2021').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+  $('.read_more_2022').click(function () {
+    $('.moretext-2022').slideToggle();
+    if (this.innerText == "Read More") {
+      this.innerText = "Read Less";
+    } else {
+      this.innerText = "Read More";
+    }
+  });
+  $('.read_more_2023').click(function () {
+    $('.moretext-2023').slideToggle();
     if (this.innerText == "Read More") {
       this.innerText = "Read Less";
     } else {

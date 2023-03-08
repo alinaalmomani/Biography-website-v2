@@ -1,6 +1,7 @@
 <?php
 include 'action/config.php';
 
+session_start();
 $sql = "SELECT * FROM messages WHERE 	approved='1' ORDER BY RAND ( )  
 LIMIT 64  ";
 $result = mysqli_query($con, $sql);
@@ -137,9 +138,7 @@ $result = mysqli_query($con, $sql);
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 heading-section text-center ftco-animate">
-          <span class="subheading">Accomplishments</span>
           <h2 class="mb-4">Milestones</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         </div>
       </div>
       <div class="timeline ">
@@ -147,7 +146,7 @@ $result = mysqli_query($con, $sql);
           <div class="date">2018</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2018</span> Accomplishments</h5>
               <div class="card-text ">
                 <p>
                 <ul>
@@ -157,7 +156,7 @@ $result = mysqli_query($con, $sql);
                   <li>Reaching the top, Orange Jordan ranked first in Jordan and sixth regionally in providing digital
                     services through
                     mobile phones.</li>
-                  <span class="moretext">
+                  <span class="moretext-2018 ">
                     <li>BIG by Orange summit which brought together 200 entrepreneurs from Jordan, Orange FAB from
                       countries around the world,
                       and investors from various sectors. This comprehensive step was to enhance the entrepreneurship
@@ -175,7 +174,7 @@ $result = mysqli_query($con, $sql);
                 </p>
               </div>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <div class="card-footer read_more_2018 btn btn-primary">
               Read More
             </div>
           </div>
@@ -184,7 +183,7 @@ $result = mysqli_query($con, $sql);
           <div class="date">2019</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2019</span> Accomplishments</h5>
               <p class="card-text ">
               <p>
               <ul>
@@ -193,7 +192,7 @@ $result = mysqli_query($con, $sql);
                 <li>Digital transformation of operations such as Orange Jordan to be first operator in Jordan to use AI
                   in Chatbot,
                   provide an e-SIM service, and a wide range of services dedicated to businesses (B2B).</li>
-                <span class="moretext">
+                <span class="moretext-2019">
                   <li>Increasing showrooms to 63 across the Kingdom, 13 of which are smart shops.
 
                   </li>
@@ -239,16 +238,16 @@ $result = mysqli_query($con, $sql);
               </p>
               </p>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <button class="card-footer read_more_2019 btn btn-primary">
               Read More
-            </div>
+</button>
           </div>
         </div>
         <div class=" co container-left">
           <div class="date">2020</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2020</span> Accomplishments</h5>
               <p class="card-text ">
               <p>
               <ul>
@@ -259,7 +258,7 @@ $result = mysqli_query($con, $sql);
                   universities’ students.</li>
                 <li>Seamless transition to working from home during lockdown, while ensuring business continuity, and
                   service delivery.</li>
-                <span class="moretext">
+                <span class="moretext-2020">
                   <li>To expand our digital programs by implementing the Innovation Space project, we received a grant
                     from the European
                     Union, and launched Orange Digital Center (ODC) under the partnership between Orange Foundation
@@ -289,7 +288,7 @@ $result = mysqli_query($con, $sql);
               </p>
               </p>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <div class="card-footer read_more_2020 btn btn-primary">
               Read More
             </div>
           </div>
@@ -298,7 +297,7 @@ $result = mysqli_query($con, $sql);
           <div class="date">2021</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2021</span> Accomplishments</h5>
               <p class="card-text ">
               <p>
               <ul>
@@ -306,7 +305,7 @@ $result = mysqli_query($con, $sql);
                 <li>In line with our focus on automation and new technologies, we developed more use cases for RPA
                   (Robot Process
                   Automation), Chatbots, and Big Data/AI.</li>
-                <span class="moretext">
+                <span class="moretext-2021">
                   <li>After only a year of its launch, Orange Money achieved an increase of 78% to reach more than
                     381,000 registered
                     customers.</li>
@@ -337,7 +336,7 @@ $result = mysqli_query($con, $sql);
               </p>
               </p>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <div class="card-footer read_more_2021 btn btn-primary">
               Read More
             </div>
           </div>
@@ -346,14 +345,14 @@ $result = mysqli_query($con, $sql);
           <div class="date">2022</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2022</span> Accomplishments</h5>
               <p class="card-text ">
               <p>
               <ul>
                 <li>A historic agreement with TRC to introduce 5G network</li>
                 <li>Conducting the first of its kind in Jordan 5G pilot experience in Orange Boulevard shop - Al Abdali.
                 </li>
-                <span class="moretext">
+                <span class="moretext-2022">
                   <li>To promote innovation for all, Orange launched the 5G Lab, the first of its kind in Jordan.</li>
                   <li>Inaugurating the Orange Innovation Hub as part of the Innovation Space project.</li>
                   <li>
@@ -401,7 +400,7 @@ $result = mysqli_query($con, $sql);
               </p>
               </p>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <div class="card-footer read_more_2022 btn btn-primary">
               Read More
             </div>
           </div>
@@ -410,9 +409,8 @@ $result = mysqli_query($con, $sql);
           <div class="date">2023</div>
           <div class="card w-100">
             <div class="card-body ">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title"><span class="fontorange"> 2023</span> Accomplishments</h5>
               <p class="card-text ">
-              <p>
               <ul>
                 <li>As a continuation of its first 5G pilot in the Kingdom, Orange Jordan holds a new 5G pilot
                   experience at the
@@ -420,7 +418,7 @@ $result = mysqli_query($con, $sql);
                 <li>In a testament for the company’s commitment to excellence, Orange Jordan received the Recognized for
                   Excellence
                   certificate for the second time, with a higher rating of 5 stars.</li>
-                <span class="moretext">
+                <span class="moretext-2023">
                   <li>Championing entrepreneurship as one of the company’s CSR pillars with the graduation of the 9th
                     season of BIG by
                     Orange and onboarding the 10th season.
@@ -428,9 +426,8 @@ $result = mysqli_query($con, $sql);
                 </span>
               </ul>
               </p>
-              </p>
             </div>
-            <div class="card-footer read_more btn btn-primary">
+            <div class="card-footer read_more_2023 btn btn-primary">
               Read More
             </div>
           </div>
@@ -444,7 +441,6 @@ $result = mysqli_query($con, $sql);
         <div class="col-md-12 heading-section text-center ftco-animate">
           <span class="subheading">BEST MOMENTS</span>
           <h2 class="mb-4">Gallery</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         </div>
       </div>
       <div class="row">
@@ -557,7 +553,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/customer\ service\ call\ center/KarakCallCenterImage.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">Customer Service Call Center</a></h3>
               </div>
             </div>
           </div>
@@ -566,7 +562,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/customer\ service\ call\ center/WhatsApp1.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">Customer Service Call Center</a></h3>
               </div>
             </div>
           </div>
@@ -577,7 +573,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/customer\ service\ call\ center/WhatsApp2.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">customer service call center</a></h3>
+                    <h3><a href="#">Customer Service Call Center</a></h3>
                   </div>
                 </div>
               </div>
@@ -586,7 +582,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/customer\ service\ call\ center/WhatsApp3.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">customer service call center</a></h3>
+                    <h3><a href="#">Customer Service Call Center</a></h3>
                   </div>
                 </div>
               </div>
@@ -628,7 +624,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/inaugurates\ three\ new\ centers\ under\ its\ digital\ umbrella/Pic.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Inaugurates Three New Centers Under its Digital Umbrella</a></h3>
                   </div>
                 </div>
               </div>
@@ -637,7 +633,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/ISO/3.JPG);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">ISO</a></h3>
                   </div>
                 </div>
               </div>
@@ -648,7 +644,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/shops/7E9A1104.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">Shops</a></h3>
               </div>
             </div>
           </div>
@@ -657,7 +653,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/shops/Pic.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">Shops</a></h3>
               </div>
             </div>
           </div>
@@ -668,7 +664,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/Signbook/Image.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">Signbook</a></h3>
               </div>
             </div>
           </div>
@@ -679,7 +675,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/Solar\ farm/Image.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Solar Farm</a></h3>
                   </div>
                 </div>
               </div>
@@ -688,7 +684,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/Solar\ farm/Pic.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Solar Farm</a></h3>
                   </div>
                 </div>
               </div>
@@ -699,7 +695,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/Solar\ farm/Pic.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">Solar Farm</a></h3>
               </div>
             </div>
           </div>
@@ -708,7 +704,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/Solar\ farm/Pic1.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">Solar Farm</a></h3>
               </div>
             </div>
           </div>
@@ -719,7 +715,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2019/Solar\ farm/Pic2.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">Solar Farm</a></h3>
               </div>
             </div>
           </div>
@@ -730,7 +726,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/The\ gift/Pic.JPG);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">The Gift</a></h3>
                   </div>
                 </div>
               </div>
@@ -739,7 +735,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2019/Top\ Employer\ award/7E9A3507.JPG);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Top Employer Award</a></h3>
                   </div>
                 </div>
               </div>
@@ -752,7 +748,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2020/COPC/Image\ copy.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">COPC</a></h3>
               </div>
             </div>
           </div>
@@ -761,7 +757,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2020/EU/Pic\ 1.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">EU</a></h3>
               </div>
             </div>
           </div>
@@ -770,7 +766,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2020/EU/Pic\ 2.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">EU</a></h3>
               </div>
             </div>
           </div>
@@ -781,7 +777,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2020/mobile\ fablab/Pic.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Mobile Fablab</a></h3>
                   </div>
                 </div>
               </div>
@@ -790,7 +786,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2020/Orange\ money/Pic.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Orange Money</a></h3>
                   </div>
                 </div>
               </div>
@@ -804,7 +800,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/Corona/Image\ 1.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">Corona</a></h3>
               </div>
             </div>
           </div>
@@ -815,7 +811,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Corona/Image\ 2.JPG);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Corona</a></h3>
                   </div>
                 </div>
               </div>
@@ -824,7 +820,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/COVID\ Vaccination\ Station/1.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">COVID Vaccination Station</a></h3>
                   </div>
                 </div>
               </div>
@@ -835,7 +831,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/COVID\ Vaccination\ Station/2.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">COVID Vaccination Station</a></h3>
               </div>
             </div>
           </div>
@@ -844,7 +840,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/COVID\ Vaccination\ Station/3.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">COVID Vaccination Station</a></h3>
               </div>
             </div>
           </div>
@@ -854,7 +850,7 @@ $result = mysqli_query($con, $sql);
             <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
               style="background-image: url(images/2021/COVID\ Vaccination\ Station/Image.JPG);">
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">COVID Vaccination Station</a></h3>
               </div>
             </div>
           </div>
@@ -865,7 +861,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/enhance\ our\ digital\ channels/Image\ copy.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Enhance Our Digital Channels</a></h3>
                   </div>
                 </div>
               </div>
@@ -874,7 +870,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Irbid\ visit/Image.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Irbid Visit</a></h3>
                   </div>
                 </div>
               </div>
@@ -885,7 +881,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/ODC/Image.png);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">ODC</a></h3>
               </div>
             </div>
           </div>
@@ -894,7 +890,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/ODC/ODC-\ GIZ.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">ODC</a></h3>
               </div>
             </div>
           </div>
@@ -905,7 +901,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/ODC/Pic.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">ODC</a></h3>
               </div>
             </div>
           </div>
@@ -916,7 +912,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Orange\ foundation/Image\ copy.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Orange Foundation</a></h3>
                   </div>
                 </div>
               </div>
@@ -925,7 +921,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Orange\ money/Image-2.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                     <h3><a href="#">Orange Money</a></h3>
                   </div>
                 </div>
               </div>
@@ -936,7 +932,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/Orange\ money/7E9A2703.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#"> <h3><a href="#">Orange Foundation</a></h3></a></h3>
               </div>
             </div>
           </div>
@@ -945,7 +941,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/SIGNS\ THE\ WOMEN’S\ EMPOWERMENT\ PRINCIPLES-WEPs/Image-2\ \(2\).JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">SIGNS THE WOMEN’S EMPOWERMENT PRINCIPLES-WEPs</a></h3>
               </div>
             </div>
           </div>
@@ -956,7 +952,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/our\ focus\ on\ automation\ and\ new\ technologies/Image\ 1.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">Our Focus on Automation and New Technologies</a></h3>
               </div>
             </div>
           </div>
@@ -967,7 +963,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Smart\ life/Image.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Smart Life</a></h3>
                   </div>
                 </div>
               </div>
@@ -976,7 +972,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Smart\ life/Image\ 1\ \(2\).jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Smart Life</a></h3>
                   </div>
                 </div>
               </div>
@@ -987,11 +983,10 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/Wi-Fi\ Campus/Image-3.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">WiFi Campus</a></h3>
               </div>
             </div>
           </div>
-
         </div>
         <div class="row mix twenty-two">
           <div class="col-md-8">
@@ -999,7 +994,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2022/5G\ pilot/Image.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">5G Pilot</a></h3>
               </div>
             </div>
           </div>
@@ -1010,7 +1005,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2022//Achieving\ our\ target\ of\ expanding\ our\ programs/OSCWinnerAnnouncementimage.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">Achieving our Target of Expanding our Programs</a></h3>
                   </div>
                 </div>
               </div>
@@ -1019,7 +1014,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2022/giglancing/GIGlancing\ Project\ image.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Giglancing</a></h3>
                   </div>
                 </div>
               </div>
@@ -1030,7 +1025,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2022/Jood/XYZ\ launch\ Image.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">Jood</a></h3>
               </div>
             </div>
           </div>
@@ -1039,7 +1034,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2022/5G\ lab/5GLabImage.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">customer service call center</a></h3>
+                <h3><a href="#">5G Lab</a></h3>
               </div>
             </div>
           </div>
@@ -1050,7 +1045,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2022/ODV\ aqaba/Orange\ Digital\ Village\ image.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">ODV Aqaba</a></h3>
               </div>
             </div>
           </div>
@@ -1061,7 +1056,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2022/ODV\ irbid/Irbid\ ODV\ image.jpeg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
+                    <h3><a href="#">ODV Irbid</a></h3>
                   </div>
                 </div>
               </div>
@@ -1070,7 +1065,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2022/Orange\ coursat/Orange\ Coursat\ image.png);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
+                    <h3><a href="#">Orange Coursat</a></h3>
                   </div>
                 </div>
               </div>
@@ -1081,7 +1076,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2022/speedcheker/Speedtest\ image.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Coding academy</a></h3>
+                <h3><a href="#">SpeedChecker</a></h3>
               </div>
             </div>
           </div>
@@ -1092,7 +1087,7 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2023/EFQM/EFQM\ image.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
+                <h3><a href="#">EFQM</a></h3>
               </div>
             </div>
           </div>
@@ -1105,18 +1100,29 @@ $result = mysqli_query($con, $sql);
       <div class="row justify-content-center mb-3 pb-3">
         <div class="col-md-7 heading-section text-center ftco-animate">
           <span class="subheading">Message</span>
-          <h2 class="mb-4"> Send a Message to Thiery</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          <h2 class="mb-4"> Send a Message to Thierry</h2>
         </div>
       </div>
       <div class="row no-gutters block-9">
         <div class="col-md-6 d-flex ">
-          <div class="img" onclick="document.getElementById('file-input').click()"
-            style="background-image: url(images/default.png);"></div>
+          <div class="img" style="background-image: url(images/bg_1.jpg);"></div>
         </div>
         <div class="col-md-6  d-flex">
           <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form"
             enctype="multipart/form-data">
+            <div class="form-group">
+              <?php
+              if(isset($_SESSION['info'])){
+                       
+                            echo'<div class="alert alert-danger text-center">';
+                               
+                                    echo $_SESSION['info'];
+                                   
+                            echo'</div>';
+                            unset($_SESSION['info']);
+                        }
+                        ?>
+            </div>
             <div class="form-group">
               <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
             </div>
@@ -1124,11 +1130,13 @@ $result = mysqli_query($con, $sql);
               <input type="Email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <textarea name="Message" id="" cols="30" rows="7" class="form-control" placeholder="Message"
+              <textarea name="Message"  cols="30" rows="7" class="form-control" placeholder="Message"
                 maxlength="200" required></textarea>
             </div>
-            <input type="file" name=' file' id="file-input" style="display: none;" class="form-control "
-              id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <div class="mb-3">
+              <label for="file" class="form-label">upload an image</label>
+              <input class="form-control" type="file" name="file" id="formFile">
+            </div>
             <div class="form-group">
               <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
             </div>
@@ -1174,7 +1182,7 @@ $result = mysqli_query($con, $sql);
 
       </div>
       <div class="container text-center">
-        <button class="btn btn-primary" id="load-more-btn"> Load More</button>
+        <button class="btn btn-primary" id="load-more-btn">Load More</button>
       </div>
     </div>
   </section>
@@ -1182,9 +1190,7 @@ $result = mysqli_query($con, $sql);
     <div class="container">
       <div class="row">
         <div class="ftco-footer-widget text-center">
-          <h2 class="ftco-heading-2">Lets talk about</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-            there live the blind texts.</p>
+          <h2 class="ftco-heading-2">Lets Connect</h2>
           <ul class="ftco-footer-social list-unstyled mt-5">
             <li class="ftco-animate"><a href="https://twitter.com/thierrymarigny?lang=en" target="_blank"><i
                   class="fa-brands fa-twitter"></i></a></li>

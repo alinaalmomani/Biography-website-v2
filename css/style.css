@@ -2430,7 +2430,7 @@ h4,
   right: 0;
   width: 40%;
   height: 65%;
-  background: #000;
+  background: #ff7900;
   opacity: 1;
   content: '';
   z-index: -1;
@@ -2439,7 +2439,7 @@ h4,
 .owl-carousel.home-slider .slider-item {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: centeroverlay center;
   top: -150px;
   height: 750px;
   position: relative;
@@ -3239,7 +3239,6 @@ h4,
 }
 
 .form-control {
-  height: 52px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
@@ -3265,7 +3264,9 @@ textarea.form-control {
 .bg-primary {
   background: #ff7900 !important;
 }
-
+.fontorange{
+  color: #ff7900 !important;
+}
 .about-author .desc h3 {
   font-size: 24px;
 }
@@ -4020,7 +4021,22 @@ textarea.form-control {
   left: 8px;
 }
 
-.moretext {
+.moretext-2018 {
+  display: none;
+}
+.moretext-2019 {
+  display: none;
+}
+.moretext-2020 {
+  display: none;
+}
+.moretext-2021 {
+  display: none;
+}
+.moretext-2022 {
+  display: none;
+}
+.moretext-2023 {
   display: none;
 }
 
