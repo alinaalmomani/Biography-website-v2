@@ -531,11 +531,11 @@ a>code {
     order: 13;
   }
 
-    .order-md-first {
-      -webkit-box-ordinal-group: 14;
-      -ms-flex-order: 1;
-      order: 1;
-    }
+  .order-md-first {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 1;
+    order: 1;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2463,7 +2463,7 @@ h4,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
-  height: 750px;
+  height: 770px;
   z-index: 0;
 }
 
@@ -2478,9 +2478,6 @@ h4,
   position: relative;
   height: 650px;
   z-index: -1;
-  -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
-  box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
@@ -2892,6 +2889,7 @@ h4,
   background: #000;
   color: #ff7900;
 }
+
 .btn.btn-primary:focus {
   border: 1px solid #ff7900;
   background: #000;
@@ -3264,15 +3262,22 @@ textarea.form-control {
 .bg-primary {
   background: #ff7900 !important;
 }
-.fontorange{
+
+.fontorange {
   color: #ff7900 !important;
 }
+
 .about-author .desc h3 {
   font-size: 24px;
 }
 
+.mix .img {
+  background-size: cover !important;
+  background-position: center center;
+}
+
 .ftco-section {
-  padding: 7em 0;
+  padding: 5em 0;
   position: relative;
 }
 
@@ -3637,7 +3642,7 @@ textarea.form-control {
   width: 100%;
   background-position: center;
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
 }
 
@@ -3650,7 +3655,7 @@ textarea.form-control {
     display: block;
     width: 100%;
   }
-    
+
 }
 
 .block-9 .form-control {
@@ -4013,25 +4018,32 @@ textarea.form-control {
 .container-right::before {
   left: 8px;
 }
-.font-orange{
-  color:#ff7900 ;
+
+.font-orange {
+  color: #ff7900;
   font-size: 3em;
 }
+
 .moretext-2018 {
   display: none;
 }
+
 .moretext-2019 {
   display: none;
 }
+
 .moretext-2020 {
   display: none;
 }
+
 .moretext-2021 {
   display: none;
 }
+
 .moretext-2022 {
   display: none;
 }
+
 .moretext-2023 {
   display: none;
 }
@@ -4150,12 +4162,14 @@ textarea.form-control {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
   }
-    
+
 }
-.messages-rows .card{
+
+.messages-rows .card {
   height: 20em !important;
-  
+
 }
+
 .carousel-wrap {
   margin: 90px auto;
   padding: 0 5%;
@@ -4211,9 +4225,11 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #000 !important;
 }
-.messages-rows .row{
+
+.messages-rows .row {
   display: none;
 }
+
 .messages-rows .row:nth-child(1),
 .messages-rows .row:nth-child(2) {
   display: flex;

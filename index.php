@@ -10,7 +10,7 @@ $result = mysqli_query($con, $sql);
 <html lang="en">
 
 <head>
-  <title>Orange Website</title>
+  <title>Thierry Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="1800">
@@ -56,7 +56,7 @@ $result = mysqli_query($con, $sql);
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
             data-scrollax-parent="true">
             <div class="one-third order-md-last img"
-              style="background-image:url(images/bg_1.jpg);background-size: contain;background-position: bottom ;">
+              style="background-image:url(images/bg_1.jpg);background-size: contain; background-position: top ;">
               <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex  align-items-center ftco-animate"
@@ -76,7 +76,7 @@ $result = mysqli_query($con, $sql);
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
             data-scrollax-parent="true">
             <div class="one-third order-md-last img"
-              style="background-image:url(images/bg_2.jpg); background-size: contain;background-position: bottom ;">
+              style="background-image:url(images/bg_2.jpg); background-size: contain;background-position: top ;">
               <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex align-items-center ftco-animate"
@@ -105,7 +105,7 @@ $result = mysqli_query($con, $sql);
         <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
           <div class="row justify-content-start pb-3">
             <div class="col-md-12 heading-section ftco-animate">
-              <span class="subheading">A message</span>
+              <span class="subheading">To You</span>
               <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">Dear Thierry,
               </h2>
               <p>You have simply made the Coding Academy a dream come true. And for that, we are ever grateful. It is
@@ -116,7 +116,7 @@ $result = mysqli_query($con, $sql);
                 You have firmly rooted our belief in the capabilities of Jordanians and that shall always be the core
                 essence of our
                 dear to heart Coding Academy.
-                Here we are reaping the fruits of our success with 450 beneficiaries enjoying an astounding 80% job
+                Here we are reaping the fruits of our success with more tha 500 students enjoying an astounding 80% job
                 market access. And
                 this is only the beginning.
                 Allow us to present this humble tribute to the great achievement that you have coded.
@@ -854,6 +854,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-8">
             <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
               style="background-image: url(images/2021/COVID\ Vaccination\ Station/Image.JPG);">
+              <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">COVID Vaccination Station</a></h3>
               </div>
@@ -938,14 +939,14 @@ $result = mysqli_query($con, $sql);
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">
-                    <h3><a href="#">Orange Foundation</a></h3>
+                    <h3><a href="#">Orange Money</a></h3>
                   </a></h3>
               </div>
             </div>
           </div>
           <div class="col-md-8">
             <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/2021/SIGNS\ THE\ WOMEN’S\ EMPOWERMENT\ PRINCIPLES-WEPs/Image-2.JPG);">
+              style="background-image: url(images/2021/woman/Image-2.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">SIGNS THE WOMEN’S EMPOWERMENT PRINCIPLES-WEPs</a></h3>
@@ -1106,7 +1107,7 @@ $result = mysqli_query($con, $sql);
     <div class="container">
       <div class="row justify-content-center mb-3 pb-3">
         <div class="col-md-7 heading-section text-center ftco-animate">
-          <span class="subheading">Message</span>
+          <span class="subheading">Messages From Us</span>
           <h2 class="mb-4"> Send a Message to Thierry</h2>
         </div>
       </div>
