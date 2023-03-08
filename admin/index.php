@@ -90,7 +90,6 @@ $name = $row['admin_name'];
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Image</th>
                         <th scope="col">Email</th>
                         <th scope="col">Message</th>
                         <th scope="col">Date</th>
@@ -106,12 +105,7 @@ $name = $row['admin_name'];
                         $id = $row['message_id'];
                         echo '<tr>
                         <th scope="row">' . $count . '</th>
-                        <td>
-                          ' . $row['full_name'] . '
-                        </td>
-                        <td>
-                          <img src"../uploads/' . $row['image'] . '" class="rounded_circle">
-                        </td>
+                        <td>' . $row['full_name'] . '</td>
                         <td>' . $row['company_email'] . '</td>
                         <td>' . $row['message'] . '</td>
                         <td>' . $row['date'] . '</td>

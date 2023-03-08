@@ -1,6 +1,5 @@
 <?php
 include 'action/config.php';
-
 session_start();
 $sql = "SELECT * FROM messages WHERE 	approved='1' ORDER BY RAND ( )  
 LIMIT 64  ";
@@ -26,11 +25,6 @@ $result = mysqli_query($con, $sql);
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -61,7 +55,8 @@ $result = mysqli_query($con, $sql);
         <div class="container">
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
             data-scrollax-parent="true">
-            <div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
+            <div class="one-third order-md-last img"
+              style="background-image:url(images/bg_1.jpg);background-size: contain;background-position: bottom ;">
               <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex  align-items-center ftco-animate"
@@ -80,7 +75,8 @@ $result = mysqli_query($con, $sql);
         <div class="container">
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
             data-scrollax-parent="true">
-            <div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
+            <div class="one-third order-md-last img"
+              style="background-image:url(images/bg_2.jpg); background-size: contain;background-position: bottom ;">
               <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex align-items-center ftco-animate"
@@ -126,7 +122,10 @@ $result = mysqli_query($con, $sql);
                 Allow us to present this humble tribute to the great achievement that you have coded.
                 <br>
                 <br>
-                Orange Jordan Coding Academy.
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title">Coding Academy by Orange</cite>
+              </figcaption>
+
               </p>
             </div>
           </div>
@@ -134,7 +133,7 @@ $result = mysqli_query($con, $sql);
       </div>
     </div>
   </section>
-  <section class="ftco-section " id="time-section">
+  <section class=" ftco-section " id=" time-section">
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 heading-section text-center ftco-animate">
@@ -150,22 +149,28 @@ $result = mysqli_query($con, $sql);
               <div class="card-text ">
                 <p>
                 <ul>
-                  <li>Promoting digital skills among the youth of Jordan, Orange Jordan launched the Orange Community
+                  <li>Promoting digital skills among the youth of Jordan, Orange Jordan launched the
+                    Orange Community
                     Digital Centers
                     umbrella covering the Kingdom</li>
-                  <li>Reaching the top, Orange Jordan ranked first in Jordan and sixth regionally in providing digital
+                  <li>Reaching the top, Orange Jordan ranked first in Jordan and sixth regionally in
+                    providing digital
                     services through
                     mobile phones.</li>
                   <span class="moretext-2018 ">
-                    <li>BIG by Orange summit which brought together 200 entrepreneurs from Jordan, Orange FAB from
+                    <li>BIG by Orange summit which brought together 200 entrepreneurs from Jordan, Orange
+                      FAB from
                       countries around the world,
-                      and investors from various sectors. This comprehensive step was to enhance the entrepreneurship
+                      and investors from various sectors. This comprehensive step was to enhance the
+                      entrepreneurship
                       ecosystem locally.</li>
-                    <li>Massive expansion in terms of coverage; Orange Jordan expanded its networks in governorates, and
+                    <li>Massive expansion in terms of coverage; Orange Jordan expanded its networks in
+                      governorates, and
                       its fiber network to
                       more than 300,000 buildings in record time.</li>
                     <li>
-                      His Majesty King Abdullah II honored Orange Jordan's CEO, Thierry Marigny at the King Abdullah II
+                      His Majesty King Abdullah II honored Orange Jordan's CEO, Thierry Marigny at the
+                      King Abdullah II
                       Award for Excellence
                       ceremony, in recognition of the company's efforts to support excellence.
                     </li>
@@ -240,7 +245,7 @@ $result = mysqli_query($con, $sql);
             </div>
             <button class="card-footer read_more_2019 btn btn-primary">
               Read More
-</button>
+            </button>
           </div>
         </div>
         <div class=" co container-left">
@@ -447,10 +452,10 @@ $result = mysqli_query($con, $sql);
         <ul class="year__controls text-center">
           <li data-filter=".eighteen"><span>2018</span></li>
           <li data-filter=".nineteen"><span>2019</span></li>
-          <li class="active" data-filter=".twenty"><span>2020</span></li>
+          <li data-filter=".twenty"><span>2020</span></li>
           <li data-filter=".twenty-one"><span>2021</span></li>
           <li data-filter=".twenty-two"><span>2022</span></li>
-          <li data-filter=".twenty-three"><span>2023</span></li>
+          <li class="active" data-filter=" .twenty-three"><span>2023</span></li>
         </ul>
       </div>
       <div class="year__filter">
@@ -519,7 +524,7 @@ $result = mysqli_query($con, $sql);
             <div class="row">
               <div class="col-md-12">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/2018/اقوى\ نت\ للموبايل\ والبيت/7E9A6227\ copy.JPG);">
+                  style="background-image: url(images/2018/strong/7E9A6227\ copy.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
@@ -528,7 +533,7 @@ $result = mysqli_query($con, $sql);
               </div>
               <div class="col-md-12">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/2018/تطلق\ مراكز\ Orange\ الرقمية\ في\ \ \ \(7\)محافظات\ المملكة/ODC\ copy.jpg);">
+                  style="background-image: url(images/2018/d/ODC\ copy.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
@@ -921,7 +926,7 @@ $result = mysqli_query($con, $sql);
                   style="background-image: url(images/2021/Orange\ money/Image-2.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                     <h3><a href="#">Orange Money</a></h3>
+                    <h3><a href="#">Orange Money</a></h3>
                   </div>
                 </div>
               </div>
@@ -932,13 +937,15 @@ $result = mysqli_query($con, $sql);
               style="background-image: url(images/2021/Orange\ money/7E9A2703.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#"> <h3><a href="#">Orange Foundation</a></h3></a></h3>
+                <h3><a href="#">
+                    <h3><a href="#">Orange Foundation</a></h3>
+                  </a></h3>
               </div>
             </div>
           </div>
           <div class="col-md-8">
             <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/2021/SIGNS\ THE\ WOMEN’S\ EMPOWERMENT\ PRINCIPLES-WEPs/Image-2\ \(2\).JPG);">
+              style="background-image: url(images/2021/SIGNS\ THE\ WOMEN’S\ EMPOWERMENT\ PRINCIPLES-WEPs/Image-2.JPG);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">SIGNS THE WOMEN’S EMPOWERMENT PRINCIPLES-WEPs</a></h3>
@@ -1105,23 +1112,23 @@ $result = mysqli_query($con, $sql);
       </div>
       <div class="row no-gutters block-9">
         <div class="col-md-6 d-flex ">
-          <div class="img" style="background-image: url(images/bg_1.jpg);"></div>
+          <div class="img d-flex" style="background-image: url(images/about-2.jpg);"></div>
         </div>
-        <div class="col-md-6  d-flex">
+        <div class="col-md-6  d-flex order-md-last">
           <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form"
             enctype="multipart/form-data">
             <div class="form-group">
               <?php
-              if(isset($_SESSION['info'])){
-                       
-                            echo'<div class="alert alert-danger text-center">';
-                               
-                                    echo $_SESSION['info'];
-                                   
-                            echo'</div>';
-                            unset($_SESSION['info']);
-                        }
-                        ?>
+              if (isset($_SESSION['info'])) {
+
+                echo '<div class="alert alert-warning text-center">';
+
+                echo $_SESSION['info'];
+
+                echo '</div>';
+                unset($_SESSION['info']);
+              }
+              ?>
             </div>
             <div class="form-group">
               <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
@@ -1130,19 +1137,14 @@ $result = mysqli_query($con, $sql);
               <input type="Email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <textarea name="Message"  cols="30" rows="7" class="form-control" placeholder="Message"
-                maxlength="200" required></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="file" class="form-label">upload an image</label>
-              <input class="form-control" type="file" name="file" id="formFile">
+              <textarea name="Message" cols="30" rows="7" class="form-control" placeholder="Message" maxlength="200"
+                required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
             </div>
           </form>
         </div>
-
       </div>
     </div>
   </section>
@@ -1155,31 +1157,27 @@ $result = mysqli_query($con, $sql);
           if ($count % 4 == 0) {
             echo '<div class="row mb-5">';
           }
-          $image = "uploads/" . $row["image"];
           // Display result data here
           echo '<div class="item col-lg-3 col-md-6 mr-1 mb-2">
           <div class="card shadow">
-            <div class="card-body">
-              <div class="d-flex align-items-center">
-                <div class="rounded-circle overflow-hidden" style="width: 70px; height: 70px;">
-                  <img src="' . $image . '" >
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center shadow-sm m-0 p-0">
+                <div class="p-3" >
+                  <i class="fa-solid fa-envelope-open-text font-orange" ></i>
                 </div>
                 <h5 class="card-title mb-0 ms-3">' . $row['full_name'] . '</h5>
               </div>
-              <p class="mt-3">' . $row['message'] . '</p>
+              <p class="mt-3 p-3">' . $row['message'] . '</p>
             </div>
           </div>
         </div>';
-
           // End the row after every 4 results
           if (($count + 1) % 4 == 0) {
             echo '</div>';
           }
-
           // Increment count
           $count++;
         } ?>
-
       </div>
       <div class="container text-center">
         <button class="btn btn-primary" id="load-more-btn">Load More</button>
@@ -1207,7 +1205,8 @@ $result = mysqli_query($con, $sql);
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -1221,21 +1220,7 @@ $result = mysqli_query($con, $sql);
   <script src="js/scrollax.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/main.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-  </script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
-    integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
-    data-cf-beacon='{"rayId":"79ae2c760b2c9bbc","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

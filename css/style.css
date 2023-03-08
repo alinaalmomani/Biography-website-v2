@@ -3636,7 +3636,7 @@ textarea.form-control {
 .contact-section .img {
   width: 100%;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -3650,14 +3650,7 @@ textarea.form-control {
     display: block;
     width: 100%;
   }
-    .contact-section .img {
-      background-position: center;
-      background-size: contain;
-        background-repeat: no-repeat;
-      
-      display: block;
-      height: 300px;
-    }
+    
 }
 
 .block-9 .form-control {
@@ -4020,7 +4013,10 @@ textarea.form-control {
 .container-right::before {
   left: 8px;
 }
-
+.font-orange{
+  color:#ff7900 ;
+  font-size: 3em;
+}
 .moretext-2018 {
   display: none;
 }
