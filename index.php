@@ -4,7 +4,6 @@ session_start();
 $sql = "SELECT * FROM messages WHERE 	approved='1' ORDER BY RAND ( )  
 LIMIT 64  ";
 $result = mysqli_query($con, $sql);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -125,7 +124,6 @@ $result = mysqli_query($con, $sql);
               <figcaption class="blockquote-footer">
                 <cite title="Source Title">Coding Academy by Orange</cite>
               </figcaption>
-
               </p>
             </div>
           </div>
@@ -199,7 +197,6 @@ $result = mysqli_query($con, $sql);
                   provide an e-SIM service, and a wide range of services dedicated to businesses (B2B).</li>
                 <span class="moretext-2019">
                   <li>Increasing showrooms to 63 across the Kingdom, 13 of which are smart shops.
-
                   </li>
                   <li>Enabling easier services and inquiries and saving time through the fully updated “My Orange” App,
                     used by more than
@@ -797,7 +794,6 @@ $result = mysqli_query($con, $sql);
               </div>
             </div>
           </div>
-
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
@@ -957,10 +953,10 @@ $result = mysqli_query($con, $sql);
         <div class="row mix twenty-one">
           <div class="col-md-8">
             <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/2021/our\ focus\ on\ automation\ and\ new\ technologies/Image\ 1.jpg);">
+              style="background-image: url(images/2021/Wi-Fi\ Campus/Image-3.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Our Focus on Automation and New Technologies</a></h3>
+                <h3><a href="#">WiFi Campus</a></h3>
               </div>
             </div>
           </div>
@@ -983,15 +979,6 @@ $result = mysqli_query($con, $sql);
                     <h3><a href="#">Smart Life</a></h3>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/2021/Wi-Fi\ Campus/Image-3.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <h3><a href="#">WiFi Campus</a></h3>
               </div>
             </div>
           </div>
@@ -1121,11 +1108,8 @@ $result = mysqli_query($con, $sql);
             <div class="form-group">
               <?php
               if (isset($_SESSION['info'])) {
-
                 echo '<div class="alert alert-warning text-center">';
-
                 echo $_SESSION['info'];
-
                 echo '</div>';
                 unset($_SESSION['info']);
               }
@@ -1206,12 +1190,12 @@ $result = mysqli_query($con, $sql);
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -1221,7 +1205,6 @@ $result = mysqli_query($con, $sql);
   <script src="js/scrollax.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>

@@ -22,7 +22,6 @@ $name = $row['admin_name'];
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="icon/x-icon" href="../icon/orange-logo.svg">
   <link rel="stylesheet" href="./dist/styles.css">
-  <link rel="stylesheet" href="./dist/all.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -34,25 +33,20 @@ $name = $row['admin_name'];
 
 <body>
   <!--Container -->
-  <div class="mx-auto bg-grey-400">
+  <div class="mx-auto ">
     <!--Screen-->
-    <div class="min-h-screen flex flex-col">
+    <div>
       <!--Header Section Starts Here-->
       <header class="nav bg-orange">
         <div class="text-end">
 
           <div class="mx-auto p-3  text-end dropdown">
-
-
             <div id="dropdownMenuButton1" class="text-white p-2 no-underline  dropdown-toggle"
               data-bs-toggle="dropdown"><?php echo $name; ?>
-
             </div>
-
             <div aria-labelledby="dropdownMenuButton1"
               class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r dropdown-menu">
               <ul class=" list-reset">
-
                 <li><a href="logout.php" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a>
                 </li>
               </ul>
@@ -63,17 +57,10 @@ $name = $row['admin_name'];
       <!--/Header-->
 
       <div class="flex flex-1">
-        <!--Sidebar-->
-
-        <!--/Sidebar-->
         <!--Main-->
         <main class="bg-white-300 flex-1 p-3 overflow-hidden">
 
           <div class="flex flex-col">
-            <!-- Stats Row Starts Here -->
-
-
-            <!-- /Stats Row Ends Here -->
 
             <!-- Card Sextion Starts Here -->
             <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2">
@@ -82,7 +69,7 @@ $name = $row['admin_name'];
 
               <div class="rounded overflow-hidden shadow bg-white mx-2 w-full">
                 <div class="px-6 py-2 border-b border-light-grey">
-                  <div class="font-bold text-xl">Messages</div>
+                  <div class="fw-bold fs-3 p-3">Messages</div>
                 </div>
                 <div class="table-responsive">
                   <table class="table text-grey-darkest">

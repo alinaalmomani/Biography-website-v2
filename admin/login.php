@@ -26,26 +26,31 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="icon/x-icon" href="../icon/orange-logo.svg">
   <link rel="stylesheet" href="./dist/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
-<body class="h-screen font-sans login bg-cover bg-gray-200">
-  <div class="container mx-auto h-full flex flex-1 justify-center items-center">
-    <div class="w-full max-w-lg">
+<body class="h-screen font-sans login bg-cover ">
+  <div class="container mx-auto  ">
+    <div class="w-100 ">
       <div class="leading-loose">
-        <form class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" action="login.php" method="post">
-          <p class=" text-gray-800 font-medium text-center text-lg font-bold">Login</p>
-          <div class="">
-            <label class="block text-sm text-gray-600" for="username">Email</label>
-            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" name="email" type="email" required placeholder="Admin Email">
+        <form class=" p-5 bg-white  shadow form-control text-center mt-5 w-50 mx-auto" action="login.php" method="post">
+          <p class=" text-gray-800 font-medium text-center text-lg fw-bold fs-3 p-3">Login</p>
+          <div class="form-group">
+            <label class="form-label" for="username">Email</label>
+            <input class="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded form-control" name="email" type="email"
+              required placeholder="Admin Email">
           </div>
-          <div class="mt-2">
-            <label class="block text-sm text-gray-600" for="password">Password</label>
-            <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="password" name="password" type="text" required placeholder="*******">
+          <div class="mt-2 form-group">
+            <label class="form-label" for="password">Password</label>
+            <input class="w-100 px-4  py-2 text-gray-700 bg-gray-200 rounded form-control" id="password" name="password"
+              type="text" required placeholder="*******">
           </div>
           <div class="mt-4 items-center justify-between">
-            <button class="px-4 py-1 text-white font-light tracking-wider bg-orange rounded" type="submit">Login</button>
+            <button class="px-4 py-1 text-white font-light bg-orange rounded btn" type="submit">Login</button>
           </div>
         </form>
       </div>

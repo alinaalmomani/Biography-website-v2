@@ -346,6 +346,7 @@ AOS.init({
   if ($('.year__filter').length > 0) {
     var containerEl = document.querySelector('.year__filter');
     var mixer = mixitup(containerEl);
+    mixer.filter('.twenty-three');
   }
   let loadMoreBtn = document.querySelector('#load-more-btn');
   let currentItem = 2;
