@@ -24,6 +24,7 @@ $result = mysqli_query($con, $sql);
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -197,6 +198,7 @@ $result = mysqli_query($con, $sql);
                   provide an e-SIM service, and a wide range of services dedicated to businesses (B2B).</li>
                 <span class="moretext-2019">
                   <li>Increasing showrooms to 63 across the Kingdom, 13 of which are smart shops.
+
                   </li>
                   <li>Enabling easier services and inquiries and saving time through the fully updated “My Orange” App,
                     used by more than
@@ -794,6 +796,7 @@ $result = mysqli_query($con, $sql);
               </div>
             </div>
           </div>
+
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
@@ -982,6 +985,7 @@ $result = mysqli_query($con, $sql);
               </div>
             </div>
           </div>
+
         </div>
         <div class="row mix twenty-two">
           <div class="col-md-8">
@@ -1108,8 +1112,11 @@ $result = mysqli_query($con, $sql);
             <div class="form-group">
               <?php
               if (isset($_SESSION['info'])) {
+
                 echo '<div class="alert alert-warning text-center">';
+
                 echo $_SESSION['info'];
+
                 echo '</div>';
                 unset($_SESSION['info']);
               }
@@ -1191,7 +1198,6 @@ $result = mysqli_query($con, $sql);
         stroke="#F96D00" />
     </svg></div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -1205,6 +1211,7 @@ $result = mysqli_query($con, $sql);
   <script src="js/scrollax.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
