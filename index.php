@@ -132,7 +132,7 @@ $result = mysqli_query($con, $sql);
       </div>
     </div>
   </section>
-  <section class=" ftco-section " id=" time-section">
+  <section class=" ftco-section " id="time-section">
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 heading-section text-center ftco-animate">
