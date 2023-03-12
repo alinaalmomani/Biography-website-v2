@@ -2491,11 +2491,17 @@ h4,
   opacity: 0;
 }
 
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y !important;
+  touch-action: pan-y !important;
+}
+
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text .one-third {
     width: 100%;
     z-index: 0;
-    background-size:cover;
+    background-size: cover;
   }
 
   .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {

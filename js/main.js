@@ -4,7 +4,20 @@ AOS.init({
 });
 
 (function ($) {
-
+  $(document).ready(function () {
+    var lastScrollTop = 0;
+    $(window).scroll(function (event) {
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop) {
+        // downscroll code
+        $('html, body').stop();
+      } else {
+        // upscroll code
+        $('html, body').stop();
+      }
+      lastScrollTop = st;
+    });
+  });
   "use strict";
 
   $(window).stellar({
