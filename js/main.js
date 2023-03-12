@@ -372,6 +372,3 @@ AOS.init({
  
   
 })(jQuery);
-document.addEventListener("touchmove", function (e) {
-  e.preventDefault();
-}, { passive: false });
