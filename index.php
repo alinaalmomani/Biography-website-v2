@@ -15,17 +15,14 @@ $result = mysqli_query($con, $sql);
   <meta http-equiv="refresh" content="1800">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="icon/x-icon" href="icon/orange-logo.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
@@ -33,8 +30,7 @@ $result = mysqli_query($con, $sql);
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="icon/orange-logo.svg" width="50" height="50" /></a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i> Menu
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
@@ -52,14 +48,11 @@ $result = mysqli_query($con, $sql);
       <div class="slider-item ">
         <div class="overlay"></div>
         <div class="container">
-          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-            data-scrollax-parent="true">
-            <div class="one-third order-md-last img"
-              style="background-image:url(images/013.jpg);background-size: contain; background-position: top ;">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+            <div class="one-third order-md-last img " style="background-image:url(images/013.jpg); background-position: top ;">
               <div class="overlay"></div>
             </div>
-            <div class="one-forth d-flex  align-items-center ftco-animate"
-              data-scrollax=" properties: { translateY: '70%' }">
+            <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
                 <h1 class="mb-4 mt-3"><span>Thierry Marigny</span></h1>
                 <h2 class="mb-4">CEO of <span>OrangeJo</span></h2>
@@ -72,14 +65,11 @@ $result = mysqli_query($con, $sql);
       <div class="slider-item">
         <div class="overlay"></div>
         <div class="container">
-          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-            data-scrollax-parent="true">
-            <div class="one-third order-md-last img"
-              style="background-image:url(images/014.jpg); background-size: contain;background-position: top ;">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+            <div class="one-third order-md-last img" style="background-image:url(images/014.jpg); background-position: top ;">
               <div class="overlay"></div>
             </div>
-            <div class="one-forth d-flex align-items-center ftco-animate"
-              data-scrollax=" properties: { translateY: '70%' }">
+            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
                 <h1 class="mb-4 mt-3"> <span>Thierry Marigny</span></h1>
                 <h2 class="mb-4">CEO of <span>OrangeJo</span></h2>
@@ -458,8 +448,7 @@ $result = mysqli_query($con, $sql);
       <div class="year__filter">
         <div class="row mix eighteen">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/039.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/039.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Big Summit</a></h3>
@@ -469,8 +458,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/077.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/077.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">During a session at the MENA ICT FORUM</a></h3>
@@ -478,8 +466,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/017.jpg)">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/017.jpg)">
                   <div class=" overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Fiber</a></h3>
@@ -489,8 +476,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/018.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/018.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Fiber</a></h3>
@@ -498,8 +484,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/038.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/038.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
@@ -509,8 +494,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix eighteen">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/060.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/060.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">King Abdullah II Award for Excellence ceremony</a></h3>
@@ -520,8 +504,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/007.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/007.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">اقوى نت للموبايل والبيت</a></h3>
@@ -529,8 +512,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/041.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/041.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">تطلق مراكز Orange الرقمية في (7)محافظات المملكة</a></h3>
@@ -542,8 +524,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix nineteen">
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/008.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/008.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Coding academy</a></h3>
@@ -551,8 +532,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/072.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/072.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Customer Service Call Center</a></h3>
@@ -560,8 +540,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/068.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/068.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Customer Service Call Center</a></h3>
@@ -571,8 +550,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/069.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/069.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Customer Service Call Center</a></h3>
@@ -580,8 +558,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/070.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/070.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Customer Service Call Center</a></h3>
@@ -591,8 +568,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/056.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/056.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Data Center</a></h3>
@@ -600,8 +576,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/016.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/016.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">E-Sim</a></h3>
@@ -611,8 +586,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix nineteen">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/059.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/059.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">EFQM</a></h3>
@@ -622,8 +596,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/050.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/050.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Inaugurates Three New Centers Under its Digital Umbrella</a></h3>
@@ -631,8 +604,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/003.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/003.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">ISO</a></h3>
@@ -642,8 +614,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/005.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/005.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Shops</a></h3>
@@ -651,8 +622,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/051.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/051.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Shops</a></h3>
@@ -662,8 +632,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix nineteen">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/025.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/025.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Signbook</a></h3>
@@ -673,8 +642,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/026.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/026.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Solar Farm</a></h3>
@@ -682,8 +650,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/052.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/052.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Solar Farm</a></h3>
@@ -693,8 +660,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/073.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Solar Farm</a></h3>
@@ -702,8 +668,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/054.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/054.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Solar Farm</a></h3>
@@ -713,8 +678,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix nineteen">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/057.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/057.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Solar Farm</a></h3>
@@ -724,8 +688,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/048.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/048.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">The Gift</a></h3>
@@ -733,8 +696,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/007.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/007.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Top Employer Award</a></h3>
@@ -746,8 +708,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty">
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/076.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/076.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">COPC</a></h3>
@@ -755,8 +716,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/055.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/055.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">EU</a></h3>
@@ -764,8 +724,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/058.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/058.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">EU</a></h3>
@@ -775,8 +734,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/047.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/047.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Mobile Fablab</a></h3>
@@ -784,8 +742,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/049.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/049.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Orange Money</a></h3>
@@ -798,8 +755,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/031.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/031.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Corona</a></h3>
@@ -809,8 +765,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/032.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/032.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Corona</a></h3>
@@ -818,8 +773,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/000.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/000.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">COVID Vaccination Station</a></h3>
@@ -829,8 +783,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/001.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/001.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">COVID Vaccination Station</a></h3>
@@ -838,8 +791,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/002.jpeg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/002.jpeg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">COVID Vaccination Station</a></h3>
@@ -849,8 +801,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/022.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/022.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">COVID Vaccination Station</a></h3>
@@ -860,8 +811,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/037.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/037.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Enhance Our Digital Channels</a></h3>
@@ -869,8 +819,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/023.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/023.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Irbid Visit</a></h3>
@@ -880,8 +829,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/027.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/027.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">ODC</a></h3>
@@ -889,8 +837,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/042.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/042.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">ODC</a></h3>
@@ -900,8 +847,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/053.jpg)">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/053.jpg)">
               <div class=" overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">ODC</a></h3>
@@ -911,8 +857,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/035.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/035.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Orange Foundation</a></h3>
@@ -920,8 +865,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/033.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/033.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Orange Money</a></h3>
@@ -931,8 +875,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/006.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/006.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">
@@ -942,8 +885,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/074.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/074.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">SIGNS THE WOMEN’S EMPOWERMENT PRINCIPLES-WEPs</a></h3>
@@ -953,8 +895,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-one">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/034.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/034.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">WiFi Campus</a></h3>
@@ -964,8 +905,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/024.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/024.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Smart Life</a></h3>
@@ -973,8 +913,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/029.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/029.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Smart Life</a></h3>
@@ -987,8 +926,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-two">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/075.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/075.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">5G Pilot</a></h3>
@@ -998,8 +936,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/046.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/046.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Achieving our Target of Expanding our Programs</a></h3>
@@ -1007,8 +944,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/020.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/020.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Giglancing</a></h3>
@@ -1018,8 +954,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/071.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/071.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">Jood</a></h3>
@@ -1027,8 +962,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/004.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/004.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">5G Lab</a></h3>
@@ -1038,8 +972,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-two">
           <div class="col-md-8">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/044.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/044.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">ODV Aqaba</a></h3>
@@ -1049,8 +982,7 @@ $result = mysqli_query($con, $sql);
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/040.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/040.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">ODV Irbid</a></h3>
@@ -1058,8 +990,7 @@ $result = mysqli_query($con, $sql);
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                  style="background-image: url(images/043.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/043.jpg);">
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
                     <h3><a href="#">Orange Coursat</a></h3>
@@ -1069,8 +1000,7 @@ $result = mysqli_query($con, $sql);
             </div>
           </div>
           <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-              style="background-image: url(images/066.jpg);">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/066.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">SpeedChecker</a></h3>
@@ -1080,8 +1010,7 @@ $result = mysqli_query($con, $sql);
         </div>
         <div class="row mix twenty-three">
           <div class="col-md-12">
-            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center"
-              style="background-image: url(images/019.jpg);">
+            <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/019.jpg);">
               <div class="overlay"></div>
               <div class="text text-center p-4">
                 <h3><a href="#">EFQM</a></h3>
@@ -1105,8 +1034,7 @@ $result = mysqli_query($con, $sql);
           <div class="img d-flex" style="background-image: url(images/012.jpg);"></div>
         </div>
         <div class="col-md-6  d-flex order-md-last">
-          <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form"
-            enctype="multipart/form-data">
+          <form action="action/message.php" method="post" class="bg-light p-4 p-md-5 contact-form" enctype="multipart/form-data">
             <div class="form-group">
               <?php
               if (isset($_SESSION['info'])) {
@@ -1127,8 +1055,7 @@ $result = mysqli_query($con, $sql);
               <input type="Email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <textarea name="Message" cols="30" rows="7" class="form-control" placeholder="Message" maxlength="200"
-                required></textarea>
+              <textarea name="Message" cols="30" rows="7" class="form-control" placeholder="Message" maxlength="200" required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -1180,10 +1107,8 @@ $result = mysqli_query($con, $sql);
         <div class="ftco-footer-widget text-center">
           <h2 class="ftco-heading-2">Lets Connect</h2>
           <ul class="ftco-footer-social list-unstyled mt-5">
-            <li class="ftco-animate"><a href="https://twitter.com/thierrymarigny?lang=en" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a></li>
-            <li class="ftco-animate"><a href="https://jo.linkedin.com/in/thierry-marigny-43981a" target="_blank"><i
-                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="ftco-animate"><a href="https://twitter.com/thierrymarigny?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="ftco-animate"><a href="https://jo.linkedin.com/in/thierry-marigny-43981a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
           </ul>
         </div>
       </div>
@@ -1192,8 +1117,7 @@ $result = mysqli_query($con, $sql);
 
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
     </svg></div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
