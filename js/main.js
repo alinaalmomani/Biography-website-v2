@@ -18,17 +18,6 @@ AOS.init({
       $('.navbar-collapse').collapse('hide');
     }
   });
-  var scrollPosition = 0;
-  $(window).on('scroll', function () { 
-    var currentScrollPosition = $(this).scrollTop();
-    if (currentScrollPosition > scrollPosition) {
-      $('html, body').stop();
-    } else {
-      $('html, body').stop();
-    }
-    scrollPosition = currentScrollPosition;
-  });
-  
 
   var fullHeight = function () {
 
