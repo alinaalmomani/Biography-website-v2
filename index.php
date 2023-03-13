@@ -13,6 +13,8 @@ $result = mysqli_query($con, $sql);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="1800">
+  <meta http-equiv="Content-Security-Policy" content="prefetch-src 'none';">
+
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="icon/x-icon" href="icon/orange-logo.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -55,7 +57,7 @@ $result = mysqli_query($con, $sql);
               <div class="text">
                 <h1 class="mb-4 mt-3"><span>Thierry Marigny</span></h1>
                 <h2 class="mb-4">CEO of <span>OrangeJo</span></h2>
-                <p></p>
+                <p class="ms-5"><em>2018 - 2023</em></p>
               </div>
             </div>
           </div>
@@ -72,6 +74,7 @@ $result = mysqli_query($con, $sql);
               <div class="text">
                 <h1 class="mb-4 mt-3"> <span>Thierry Marigny</span></h1>
                 <h2 class="mb-4">CEO of <span>OrangeJo</span></h2>
+                <p class="ms-5"><em>2018 - 2023</em></p>
               </div>
             </div>
           </div>

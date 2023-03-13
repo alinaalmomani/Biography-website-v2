@@ -6,6 +6,7 @@ AOS.init({
 (function ($) {
   
   "use strict";
+
   $('.navbar-nav a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
