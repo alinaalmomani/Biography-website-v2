@@ -4,22 +4,29 @@ AOS.init({
 });
 
 (function ($) {
-  $(document).ready(function () {
-    var lastScrollTop = 0;
-    $(window).scroll(function (event) {
-      var st = $(this).scrollTop();
-      if (st > lastScrollTop) {
-        // downscroll code
-        $('html, body').stop();
-      } else {
-        // upscroll code
-        $('html, body').stop();
-      }
-      lastScrollTop = st;
-    });
-  });
+  
   "use strict";
+  $('.navbar-nav a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
 
+  $(document).on('click', function (event) {
+    var clickover = $(event.target);
+    var opened = $('.navbar-collapse').hasClass('show');
+    if (opened && !clickover.hasClass('navbar-toggler')) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+  var scrollPosition = 0;
+  $(window).on('scroll', function () { 
+    var currentScrollPosition = $(this).scrollTop();
+    if (currentScrollPosition > scrollPosition) {
+      $('html, body').stop();
+    } else {
+      $('html, body').stop();
+    }
+    scrollPosition = currentScrollPosition;
+  });
   $(window).stellar({
     responsive: true,
     parallaxBackgrounds: true,
