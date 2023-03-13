@@ -13,7 +13,6 @@ $result = mysqli_query($con, $sql);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="1800">
-  <meta http-equiv="Content-Security-Policy" content="prefetch-src 'none';">
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="icon/x-icon" href="icon/orange-logo.svg">
