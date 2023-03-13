@@ -42,7 +42,7 @@ $result = mysqli_query($con, $sql);
       </div>
     </div>
   </nav>
-  <section id="toyou-section" class="hero">
+  <section class="hero">
     <div class="home-slider  owl-carousel">
       <div class="slider-item ">
         <div class="overlay"></div>
@@ -80,7 +80,7 @@ $result = mysqli_query($con, $sql);
       </div>
     </div>
   </section>
-  <section class="ftco-about ftco-counter img ftco-section" id="about-section">
+  <section class="ftco-about ftco-counter img ftco-section" id="toyou-section">
     <div class="container">
       <div class="row d-flex">
         <div class="col-md-6 col-lg-5 d-flex">

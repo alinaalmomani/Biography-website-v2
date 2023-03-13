@@ -4,7 +4,7 @@ session_start();
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['Message'];
-$query = "INSERT INTO messages (full_name,company_email,message) VALUES ( '$name', '$email','$message')";
+$query = "INSERT INTO messages (full_name,company_email,message,approved) VALUES ( '$name', '$email','$message',1)";
 if (mysqli_query($con, $query)) {
   $_SESSION['info'] = "Your Message Has Been Sent";
 } else {

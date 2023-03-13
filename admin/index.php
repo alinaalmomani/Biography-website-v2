@@ -5,7 +5,7 @@ if ($_SESSION['admin'] != true) {
   header('Location: login.php');
   exit();
 }
-$sql = "SELECT * FROM messages WHERE approved	= false";
+$sql = "SELECT * FROM messages ";
 $result = mysqli_query($con, $sql);
 $sql2 = "SELECT * FROM admin WHERE admin_id	= 1";
 $result2 = mysqli_query($con, $sql2);
@@ -69,7 +69,9 @@ $name = $row['admin_name'];
 
               <div class="rounded overflow-hidden shadow bg-white mx-2 w-full">
                 <div class="px-6 py-2 border-b border-light-grey">
-                  <div class="fw-bold fs-3 p-3">Messages</div>
+                  <div class="fw-bold fs-3 p-3">Messages </div>
+                  <small class="text-muted p-3">If you <i class="fa-regular fa-trash-can text-danger"></i> Delete a Message it can't be Retrieved</small>
+                  
                 </div>
                 <div class="table-responsive">
                   <table class="table text-grey-darkest">
@@ -78,6 +80,7 @@ $name = $row['admin_name'];
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Message</th>
                         <th scope="col">Date</th>
                         <th scope="col">Delete</th>
@@ -89,21 +92,40 @@ $name = $row['admin_name'];
                       $count = 0;
                       while ($row = mysqli_fetch_assoc($result)) {
                         $count++;
-                        $id = $row['message_id'];
-                        echo '<tr>
+                        $approved=$row['approved'];
+                        if($approved){
+                          $id = $row['message_id'];
+                        echo '<tr  class="table-success">
                         <th scope="row">' . $count . '</th>
                         <td>' . $row['full_name'] . '</td>
                         <td>' . $row['company_email'] . '</td>
+                        <td>Displayed</td>
                         <td>' . $row['message'] . '</td>
                         <td>' . $row['date'] . '</td>
                         <td>
                           <a href="delete.php?id=' . $id . '" class="text-danger"><i class="fa-regular fa-trash-can"></i></a>
                         </td>
                         <td>
-                          <a href="approve.php?id=' . $id . '" class="text-success"><i class="fa-solid fa-plus"></i></a>
+                        <a href="approve.php?no=' . $id . '" class="text-warning"><i class="fa-solid fa-x"></i></a>   
                         </td>
                       </tr>';
-                      } ?>
+                        }else{
+                        $id = $row['message_id'];
+                        echo '<tr class="table-danger">
+                        <th scope="row">' . $count . '</th>
+                        <td>' . $row['full_name'] . '</td>
+                        <td>' . $row['company_email'] . '</td>
+                        <td>NOT Displayed</td>
+                        <td>' . $row['message'] . '</td>
+                        <td>' . $row['date'] . '</td>
+                        <td>
+                          <a href="delete.php?id=' . $id . '" class="text-danger"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                        <td>
+                          <a href="approve.php?yes=' . $id . '" class="text-success"><i class="fa-solid fa-plus"></i></a>
+                        </td>
+                      </tr>';
+                      }} ?>
                     </tbody>
                   </table>
                 </div>
